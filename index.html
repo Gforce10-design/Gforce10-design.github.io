@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>subal_i — AI가 「다 됐습니다」라고 한 뒤, 진짜 됐는지 확인하는 법</title>
+<meta name="description" content="AI가 「다 됐습니다」라고 한 뒤 진짜 됐는지 확인하는 법을 쓴다. 무료로 푼 책 『AI가 일했다는 증거』 0~8장 전문과 코드, Threads @subal_i 연재로 가는 길.">
+<meta name="naver-site-verification" content="a2240f8be5051f7ccae7824aeb41822037f94241">
+<link rel="canonical" href="https://gforce10-design.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI가 일했다는 증거">
+<meta property="og:title" content="subal_i — AI가 「다 됐습니다」라고 한 뒤, 진짜 됐는지 확인하는 법">
+<meta property="og:description" content="AI가 「다 됐습니다」라고 한 뒤 진짜 됐는지 확인하는 법을 쓴다. 무료로 푼 책 『AI가 일했다는 증거』 0~8장 전문과 코드, Threads @subal_i 연재로 가는 길.">
+<meta property="og:url" content="https://gforce10-design.github.io/">
+<meta property="og:image" content="https://gforce10-design.github.io/ai-work-evidence/assets/og.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="sitemap" type="application/xml" href="https://gforce10-design.github.io/sitemap.xml">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://gforce10-design.github.io/#website", "url": "https://gforce10-design.github.io/", "name": "subal_i", "inLanguage": "ko", "author": {"@id": "https://gforce10-design.github.io/ai-work-evidence/#author"}}, {"@type": "Person", "@id": "https://gforce10-design.github.io/ai-work-evidence/#author", "name": "subal_i", "url": "https://www.threads.com/@subal_i", "sameAs": ["https://www.threads.com/@subal_i", "https://github.com/Gforce10-design"]}, {"@type": "Book", "@id": "https://gforce10-design.github.io/ai-work-evidence/#book", "name": "AI가 일했다는 증거", "url": "https://gforce10-design.github.io/ai-work-evidence/", "inLanguage": "ko", "author": {"@id": "https://gforce10-design.github.io/ai-work-evidence/#author"}, "isAccessibleForFree": true}]}</script>
+</head>
+<body>
+<header class="site"><a class="name" href="https://gforce10-design.github.io/ai-work-evidence/">AI가 일했다는 증거</a><nav><a href="https://www.threads.com/@subal_i">Threads @subal_i</a><a href="https://github.com/Gforce10-design/ai-work-evidence">코드</a><a href="https://github.com/Gforce10-design/ai-work-evidence/releases/latest">PDF</a></nav></header>
+<main>
+<h1>AI가 「다 됐습니다」라고 한 뒤, 진짜 됐는지 확인하는 법</h1>
+<p class="lead">Threads <a href="https://www.threads.com/@subal_i">@subal_i</a> 가 쓰는 글과 책을 모아 둔 곳이다.</p>
+<h2 id="book">책 — <a href="https://gforce10-design.github.io/ai-work-evidence/">AI가 일했다는 증거</a></h2>
+<p>Claude Code에 일을 시키고 &quot;다 됐다&quot;는 말을 어떻게 확인하는지 다룬 책이다. 원래 팔던 책인데 전부 무료로 풀었다. 아래에서 장마다 전문을 읽을 수 있다.</p>
+<ul class="links"><li><a class="main" href="https://gforce10-design.github.io/ai-work-evidence/">책 첫 쪽</a></li><li><a href="https://www.threads.com/@subal_i">Threads @subal_i 연재</a></li><li><a href="https://github.com/Gforce10-design/ai-work-evidence/releases/latest">PDF 받기</a></li><li><a href="https://github.com/Gforce10-design/ai-work-evidence">코드 저장소</a></li></ul>
+<ol class="chapters">
+<li><a href="https://gforce10-design.github.io/ai-work-evidence/ch00-exit-code-is-not-evidence/">0장 — 왜 &quot;exit 0&quot;은 증거가 아닌가</a><p>워커가 &quot;완료&quot;라고 답했고 종료코드도 0인데, 그 작업이 실제로 일어났는지 확인할 방법이 없다. 붙일 장치: 증거를 7단계로 나누고, 아래 단계가 다 채워져야만 위 단계를 주장할 수 있게 강제하는 검증기.</p></li>
+<li><a href="https://gforce10-design.github.io/ai-work-evidence/ch01-directives-fade/">1장 — 지시가 몇 턴 만에 흐려지는 문제</a><p>CLAUDE.md 에 규칙을 써 두어도 몇 턴 지나면 지켜지지 않는다. 붙일 장치: 사용자 프롬프트를 처리하기 전에 짧은 핵심 지시를 추가하는 훅.</p></li>
+<li><a href="https://gforce10-design.github.io/ai-work-evidence/ch02-designing-claude-md/">2장 — CLAUDE.md를 오래 고쳐 쓸 수 있게 짜기</a><p>사고가 날 때마다 규칙을 덧붙이다 보니 CLAUDE.md 가 감당 못 할 크기가 됐다. 붙일 장치: 얇은 부트스트랩 + 외부 정본 포인터 + 해시 고정 + 마커 블록 조각.</p></li>
+<li><a href="https://gforce10-design.github.io/ai-work-evidence/ch03-session-continuity/">3장 — 세션이 끊겨도 이어지게</a><p>세션이 끊기면 다음 세션이 이미 기각한 설계안을 다시 제안한다. 붙일 장치: SESSION.md 한 장 — 목표·현재 상태·다음 단계·결정 기록·파일 흔적.</p></li>
+<li><a href="https://gforce10-design.github.io/ai-work-evidence/ch04-direct-or-delegate/">4장 — 직접 할까 위임할까</a><p>직접 5분이면 될 일을 위임했다가 15분짜리 왕복이 됐다. 붙일 장치: 물량·명세 확정도·병렬성으로 직접/위임을 가르는 판정 함수.</p></li>
+<li><a href="https://gforce10-design.github.io/ai-work-evidence/ch05-diagnosing-failure/">5장 — 실패했을 때 무엇을 올릴 것인가</a><p>실패하면 반사적으로 effort 를 올린다. 또 실패한다. 원인은 딴 데 있었다. 붙일 장치: 실패를 7가지로 나누고 종류마다 다른 손잡이를 당기는 진단표.</p></li>
+<li><a href="https://gforce10-design.github.io/ai-work-evidence/ch06-dangerous-commands/">6장 — 위험한 명령을 안전하게 위임하기</a><p>승인 버튼을 하루에 수백 번 누르다 보면 내용을 안 읽고 누르게 된다. 붙일 장치: 위험 명령을 기본 차단하고, 1회성 해시 바인딩 승인 마커로만 열어주는 훅.</p></li>
+<li><a href="https://gforce10-design.github.io/ai-work-evidence/ch07-proving-delegation/">7장 — 위임 증거 만들기</a><p>40KB 짜리 파일 셋을 5초 만에 리뷰했다고 답이 왔다. 파일을 연 적이 없었다. 붙일 장치: 워커 스냅샷 격리 · 1회성 nonce · challenge-response · 고정 응답 계약.</p></li>
+<li><a href="https://gforce10-design.github.io/ai-work-evidence/ch08-proving-the-guards/">8장 — 가드가 진짜 작동하는지 증명하기</a><p>몇 주째 초록불이던 검사가, 사고가 난 뒤 보니 한 번도 빨간불이 된 적이 없었다. 붙일 장치: 일부러 깨뜨려서 빨간불이 켜지는지 확인하는 뮤테이션 드릴.</p></li>
+</ol>
+</main>
+<footer class="site">
+<p>이 책은 무료다. 받은 사람은 누구나 읽고 나눠도 된다. 출처만 밝혀 달라.</p>
+<p>쓴 사람: Threads <a href="https://www.threads.com/@subal_i">@subal_i</a> — 하루 한 편씩 나눠 올린다. 책에 실린 코드는 <a href="https://github.com/Gforce10-design/ai-work-evidence">GitHub</a>에 있고 MIT 라이선스다. <a href="https://github.com/Gforce10-design/ai-work-evidence/releases/latest">PDF 받기</a></p>
+</footer>
+</body>
+</html>

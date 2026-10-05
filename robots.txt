@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gforce10-design.github.io/sitemap.xml
+Sitemap: https://gforce10-design.github.io/ai-work-evidence/sitemap.xml
